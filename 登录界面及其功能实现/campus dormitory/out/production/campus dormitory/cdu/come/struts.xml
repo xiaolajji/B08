@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="strutsqs" extends="struts-default" namespace="/" >
+		<!--登录的-->
+		<action name="GoLogin" class="come.servlet.LoginServlet">
+			<result name="input">/Login.jsp</result>
+			<result name="success">/Index.jsp</result>
+		</action>
+		<action name="Quit" class="come.servlet.Quit">
+			<result name="success">/Login.jsp</result>
+		</action>
+		<action name="PasswordUpdateSave" class="come.servlet.PasswordUpdateSave">
+			<result name="input">/PasswordUpdate.jsp</result>
+		</action>
+		
+		<action name="TeacherManager" class="come.servlet.TeacherManager">
+			<result name="success">/TeacherManager.jsp</result>
+		</action>
+		<action name="TeacherAddSave" class="come.servlet.TeacherAddSave">
+		</action>
+		<action name="TeacherUpdate" class="come.servlet.TeacherUpdate">
+		    <result name="success">/TeacherUpdate.jsp</result>
+		</action>
+		<action name="TeacherUpdateSave" class="come.servlet.TeacherUpdateSave">
+		</action>
+		<action name="TeacherDel" class="come.servlet.TeacherDel">
+		  <result name="success" type="chain">TeacherManager</result>
+		</action>
+		
+		<action name="StudentManager" class="come.servlet.StudentManager">
+			<result name="success">/StudentManager.jsp</result>
+		</action>
+		<action name="StudentAddSave" class="come.servlet.StudentAddSave">
+		</action>
+		<action name="StudentUpdate" class="come.servlet.StudentUpdate">
+		    <result name="success">/StudentUpdate.jsp</result>
+		</action>
+		<action name="StudentUpdateSave" class="come.servlet.StudentUpdateSave">
+		</action>
+		<action name="StudentDel" class="come.servlet.StudentDel">
+		  <result name="success" type="chain">StudentManager</result>
+		</action>
+		
+		<action name="BuildingManager" class="come.servlet.BuildingManager">
+			<result name="success">/BuildingManager.jsp</result>
+		</action>
+		<action name="BuildingAddSave" class="come.servlet.BuildingAddSave">
+		</action>
+		<action name="BuildingUpdate" class="come.servlet.BuildingUpdate">
+		    <result name="success">/BuildingUpdate.jsp</result>
+		</action>
+		<action name="BuildingUpdateSave" class="come.servlet.BuildingUpdateSave">
+		</action>
+		<action name="BuildingDel" class="come.servlet.BuildingDel">
+		  <result name="success" type="chain">BuildingManager</result>
+		</action>
+		
+		<action name="DomitoryAdd" class="come.servlet.DomitoryAdd">
+			<result name="success">/DomitoryAdd.jsp</result>
+		</action>
+		<action name="DomitoryManager" class="come.servlet.DomitoryManager">
+			<result name="success">/DomitoryManager.jsp</result>
+		</action>
+		<action name="DomitoryAddSave" class="come.servlet.DomitoryAddSave">
+		</action>
+		<action name="DomitoryUpdate" class="come.servlet.DomitoryUpdate">
+		    <result name="success">/DomitoryUpdate.jsp</result>
+		</action>
+		<action name="DomitoryUpdateSave" class="come.servlet.DomitoryUpdateSave">
+		</action>
+		<action name="DomitoryDel" class="come.servlet.DomitoryDel">
+		  <result name="success" type="chain">DomitoryManager</result>
+		</action>
+		
+		<action name="StudentRZ" class="come.servlet.StudentRZ">
+			<result name="success">/StudentRZ.jsp</result>
+		</action>
+		<action name="StudentRZSave" class="come.servlet.StudentRZSave">
+		</action>
+		<action name="StudentTH" class="come.servlet.StudentTH">
+			<result name="success">/StudentTH2.jsp</result>
+		</action>
+		<action name="StudentTHSave" class="come.servlet.StudentTHSave">
+		</action>
+		<action name="StudentQC" class="come.servlet.StudentQC">
+			<result name="success">/StudentQC2.jsp</result>
+		</action>
+		<action name="StudentQCSave" class="come.servlet.StudentQCSave">
+		</action>
+		
+		<action name="TBManager" class="come.servlet.TBManager">
+			<result name="success">/TBManager.jsp</result>
+		</action>
+		<action name="TBAddSave" class="come.servlet.TBAddSave">
+		</action>
+		<action name="TBDel" class="come.servlet.TBDel">
+		</action>
+		
+		<action name="MyStudent" class="come.servlet.MyStudent">
+			<result name="success">/MyStudent.jsp</result>
+		</action>
+		<action name="MyStudentList" class="come.servlet.MyStudentList">
+			<result name="success">/MyStudentList.jsp</result>
+		</action>
+		
+		<action name="LogAdd" class="come.servlet.LogAdd">
+			<result name="success">/LogAdd.jsp</result>
+		</action>
+		<action name="LogAddSave" class="come.servlet.LogAddSave">
+		</action>
+		
+		<action name="MyLog" class="come.servlet.MyLog">
+			<result name="success">/MyLog.jsp</result>
+		</action>
+		<action name="MyLogList" class="come.servlet.MyLogList">
+			<result name="success">/MyLogList.jsp</result>
+		</action>
+		
+		<action name="StudentLog" class="come.servlet.StudentLog">
+			<result name="success">/StudentLog.jsp</result>
+		</action>
+		
+		<action name="AdminLog" class="come.servlet.AdminLog">
+			<result name="success">/AdminLog.jsp</result>
+		</action>
+		<action name="AdminLogList" class="come.servlet.AdminLogList">
+			<result name="success">/AdminLogList.jsp</result>
+		</action>
+		
+		<action name="OutList" class="come.servlet.OutList">
+			<result name="success">/OutList.jsp</result>
+		</action>
+		
+	</package>
+</struts>    
